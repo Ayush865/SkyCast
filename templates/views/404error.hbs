@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>links}}
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- navbar -->
+    {{>navbar}}
+
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                 <div class="row">
+                    <div class="col-md-6 col-12 mx-auto main_header_left align-items-center">
+                        <figure class="mt-5">
+                            <img src="images/404error.webp" alt="Ayush" class="img-fluid" title="Ayush Prakash">
+                        </figure>
+                        <h1>{{errorMsg}}</h1>
+                        <a href="/"><button>Go back </button></a>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <!-- footer  -->
+    {{>footer }}
+
+
+</body>
+
+</html>

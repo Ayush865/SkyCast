@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>links}}
+    <!-- <link rel="shortcut icon" href="images/logo.png" type="image/pn g"> -->
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <!-- navbar -->
+    {{>navbar}}
+
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="main_content">
+                    <form action="" class="temp_form">
+                        <input type="text" id="cityname" placeholder="Enter your city name " autocomplete="off">
+                        <input type="submit" value="Search" id="submitBtn" >
+                    </form>
+                </div>
+                <div class="tempInformation">
+                    <div class="top_layer">
+                        <p id="day">Monday</p>
+                        <p id="today_data">26 March</p>
+                    </div>
+                    <div class="main_layer">
+                        <p id="cityName">Get Output here</p>
+                        {{!-- we add data_hide in the below div --}}
+                        <div class="middle_layer ">
+                            <p id="temp"></p>
+                            <p id="temp_status"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer  -->
+    {{>footer}}
+    <script src="js/main.js">
+    </script>
+</body>
+
+</html>
