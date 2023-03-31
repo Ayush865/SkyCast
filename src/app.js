@@ -1,7 +1,7 @@
 const express=require('express');
 const app=express();
 const hbs=require('hbs');
-const port=3000;
+const port=process.env.port ||3000;
 const path=require("path");
 const staticPath=path.join(__dirname,"../public");
 const templatePath=path.join(__dirname,"../templates/views");

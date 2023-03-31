@@ -113,7 +113,9 @@ body {
 }
 
 .main_header_right figure img {
-    height: 120%;
+    height: auto;
+    width: 20rem;
+    border-radius: 20rem;
     filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.3));
 }
 
